@@ -21,13 +21,12 @@ export default {
     link: String,
     activeColor: {
       type: String,
-      default: "blue",
+      default: "red",
     },
   },
 
   computed: {
     isActive() {
-      console.log(this.$route);
       return this.$route.path.indexOf(this.link) != -1;
     },
     activeStyle() {
